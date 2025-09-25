@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empatelao</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-green-600 text-white py-8 text-center">
+      <h1 class="text-3xl font-bold">Empatelao</h1>
+      <p class="mt-2">Family owned business. Productos de Calidad.</p>
+      <nav class="mt-4 space-x-4">
+        <a href="#nosotros" class="hover:underline font-semibold">Nosotros</a>
+        <a href="#productos" class="hover:underline font-semibold">Productos</a>
+        <a href="#encuentranos" class="hover:underline font-semibold"
+          >Encuentranos</a
+        >
+        <a href="#contacto" class="hover:underline font-semibold">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="max-w-5xl mx-auto py-12 px-6" id="nosotros">
+      <h2 class="text-2xl font-bold text-green-600 mb-4">Sobre Nosotros</h2>
+      <p class="text-lg">
+        Somos una empresa familiar dedicada a ofrecer productos de alta calidad,
+        hechos con amor y dedicación. Nuestra misión es brindar lo mejor a
+        nuestros clientes, con un trato cercano y humano.
+      </p>
+    </section>
+
+    <!-- Productos -->
+
+    <section class="max-w-5xl mx-auto py-12 px-6" id="productos">
+      <h2 class="text-2xl font-bold text-green-600 mb-8">Productos</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Bolitas de queso</h3>
+          <img
+            src="./public/pictures/bolitas_de_queso.webp"
+            alt="Producto 1"
+            class="rounded mb-4"
+          />
+          <p>
+            Pequeños tesoros de queso derretido, envueltos en una crujiente capa
+            dorada. ¡Perfectas para picar y compartir en cualquier momento!
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Empanadas</h3>
+          <img
+            src="./public/pictures/empanada_pizza.webp"
+            alt="Producto 2"
+            class="rounded mb-4"
+          />
+          <p>
+            Una explosión de sabor en cada mordisco. Rellenas con una mezcla
+            irresistible de ingredientes y horneadas a la perfección, nuestras
+            empanadas son un clásico que nunca falla.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Croquetas de Pollo</h3>
+          <img
+            src="./public/pictures/croqueta_pollo.webp"
+            alt="Producto 1"
+            class="rounded mb-4"
+          />
+          <p>
+            Deliciosas por dentro, crujientes por fuera. Nuestras croquetas de
+            pollo son el aperitivo ideal que conquista a todos. Un bocado suave
+            y sabroso que te transportará a tu niñez.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Pasteles en hoja</h3>
+          <img
+            src="./public/pictures/pastel_en_hoja02.webp"
+            alt="Producto 2"
+            class="rounded mb-4"
+          />
+          <p>
+            El sabor tradicional que tanto amamos. Estos pasteles, envueltos en
+            una hoja de plátano, son un manjar relleno con carne sazonada. Una
+            experiencia gastronómica que deleita el paladar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Encuentranos -->
+    <section class="max-w-5xl mx-auto py-12 px-6" id="encuentranos">
+      <h2 class="text-2xl font-bold text-green-600 mb-4">
+        Encuentranos en estos lugares
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Supermercados Nacional</h3>
+          <img
+            width="400px"
+            height="400px"
+            src="./public/pictures/super_nacional.webp"
+            alt="Producto 1"
+            class="rounded mb-4"
+          />
+          <!-- <p>Descripción del producto 1. Ideal para tus necesidades diarias.</p> -->
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Hipermercados Olé</h3>
+          <img
+            width="400px"
+            height="400px"
+            src="./public/pictures/Hipermercados_ole.webp"
+            alt="Producto 2"
+            class="rounded mb-4"
+          />
+          <!-- <p>Descripción del producto 2. Hecho con los mejores materiales.</p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto py-12 px-6" id="contacto">
+      <h2 class="text-2xl font-bold text-green-600 mb-6">Contáctanos</h2>
+      <form class="bg-white shadow rounded p-6 space-y-4">
+        <input
+          type="text"
+          placeholder="Tu nombre"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <input
+          type="email"
+          placeholder="Tu correo"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        />
+        <textarea
+          rows="5"
+          placeholder="Escribe tu mensaje"
+          required
+          class="w-full p-3 border border-gray-300 rounded"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </section>
+
+    <footer class="text-center py-6 bg-gray-100 mt-12">
+      <p class="text-sm">
+        &copy; 2025 Empresa Familiar. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
